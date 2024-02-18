@@ -24,6 +24,7 @@
     {{-- CDN Javascript --}}
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Summernote js -->
     <script src="{{ asset('assets/libs/summernote/summernote-bs4.min.js') }}"></script>
@@ -63,63 +64,100 @@
 
         // Slider Layanan
         class SliderClip {
-        constructor(el) {
-        this.el = el;
-        this.Slides = Array.from(this.el.querySelectorAll('.slide'));
-        this.Nav = Array.from(this.el.querySelectorAll('aside a'));
-        this.totalSlides = this.Slides.length;
-        this.current = 0;
-        this.autoPlay = true; //true or false
-        this.timeTrans = 10000; //transition time in milliseconds
-        this.IndexElements = [];
+            constructor(el) {
+                this.el = el;
+                this.Slides = Array.from(this.el.querySelectorAll('.slide'));
+                this.Nav = Array.from(this.el.querySelectorAll('aside a'));
+                this.totalSlides = this.Slides.length;
+                this.current = 0;
+                this.autoPlay = true; //true or false
+                this.timeTrans = 7000; //transition time in milliseconds
+                this.IndexElements = [];
+                this.start = undefined;
+                this.swiping = false;
+                this.swipingDistance = 0;
 
-        for (let i = 0; i < this.totalSlides; i++) {
-            this.IndexElements.push(i);
-        }
+                for (let i = 0; i < this.totalSlides; i++) {
+                    this.IndexElements.push(i);
+                }
 
-        this.setCurret();
-        this.initEvents();
-        }
-        setCurret() {
-        this.Slides[this.current].classList.add('current');
-        this.Nav[this.current].classList.add('current_dot');
-        }
-        initEvents() {
-        const self = this;
-
-        this.Nav.forEach(dot => {
-            dot.addEventListener('click', ele => {
-            ele.preventDefault();
-            this.changeSlide(this.Nav.indexOf(dot));
-            });
-        });
-
-        this.el.addEventListener('mouseenter', () => self.autoPlay = false);
-        this.el.addEventListener('mouseleave', () => self.autoPlay = true);
-
-        setInterval(function () {
-            if (self.autoPlay) {
-            self.current = self.current < self.Slides.length - 1 ? self.current + 1 : 0;
-            self.changeSlide(self.current);
+                this.setCurret();
+                this.initEvents();
+             }
+            setCurret() {
+                this.Slides[this.current].classList.add('current');
+                this.Nav[this.current].classList.add('current_dot');
             }
-        }, this.timeTrans);
+            initEvents() {
+                const self = this;
 
+                this.Nav.forEach(dot => {
+                    dot.addEventListener('click', ele => {
+                    ele.preventDefault();
+                    this.changeSlide(this.Nav.indexOf(dot));
+                    self.current = this.Nav.indexOf(dot);
+                    });
+                });
+
+                this.el.addEventListener('mouseenter', () => self.autoPlay = false);
+                this.el.addEventListener('mouseleave', () => self.autoPlay = true);
+                this.el.addEventListener('touchstart', e => this.touchStart(e));
+                this.el.addEventListener('touchmove', e => this.touchMove(e));
+                this.el.addEventListener('touchend', e => this.touchEnd(e));
+
+                setInterval(function () {
+                    if (self.autoPlay) {
+                        // console.log(self.current);
+                    self.current = self.current < self.Slides.length - 1 ? self.current + 1 : 0;
+                    self.changeSlide(self.current);
+                    }
+                }, this.timeTrans);
+
+            }
+
+            changeSlide(index) {
+
+                this.Nav.forEach(allDot => allDot.classList.remove('current_dot'));
+
+                this.Slides.forEach(allSlides => allSlides.classList.remove('prev', 'current'));
+
+                const getAllPrev = value => value < index;
+
+                const prevElements = this.IndexElements.filter(getAllPrev);
+
+                prevElements.forEach(indexPrevEle => this.Slides[indexPrevEle].classList.add('prev'));
+
+                this.Slides[index].classList.add('current');
+                this.Nav[index].classList.add('current_dot');
+            }
+
+            touchStart (e){
+                if (e.touches.length !== 1) return
+                if (!e.target.matches(`#service-product, #services-product *`)) return
+                this.start = e.touches[0].screenX;
+                this.swiping = true;
+            }
+            touchMove (e){
+                if (e.touches.length !== 1) return
+                if (!this.swiping) return
+                this.swipingDistance = e.touches[0].screenX - this.start;
+            }
+            touchEnd (e){
+                const self = this;
+
+                if (this.swipingDistance < 0) {
+                    self.current = self.current < self.Slides.length - 1 ? self.current + 1 : 0;
+                    self.changeSlide(self.current);
+                }
+                if (this.swipingDistance > 0) {
+                    self.current = self.current - 1 !== -1 ? self.current - 1 : self.Slides.length -1;
+                    self.changeSlide(self.current);
+                }
+                this.start = 0;
+                this.swiping = false
+                this.swipingDistance = 0;
+            }
         }
-        changeSlide(index) {
-
-        this.Nav.forEach(allDot => allDot.classList.remove('current_dot'));
-
-        this.Slides.forEach(allSlides => allSlides.classList.remove('prev', 'current'));
-
-        const getAllPrev = value => value < index;
-
-        const prevElements = this.IndexElements.filter(getAllPrev);
-
-        prevElements.forEach(indexPrevEle => this.Slides[indexPrevEle].classList.add('prev'));
-
-        this.Slides[index].classList.add('current');
-        this.Nav[index].classList.add('current_dot');
-        }}
 
 
         const slider = new SliderClip(document.querySelector('.slider-layanan'));
@@ -204,7 +242,7 @@
             continue;
             } //private videos do no reveal thumbs, so skip them
 
-            console.log(((item.title).split('Pengamat Politik Yusak Farchan - ').join('')).length);
+            // console.log(((item.title).split('Pengamat Politik Yusak Farchan - ').join('')).length);
             let title = ((((item.title).split('Pengamat Politik Yusak Farchan - ').join('')).split('Pengamat Politik Yusak Farchan dalam').join('')).length > 50) ? (((item.title).split('Pengamat Politik Yusak Farchan - ').join('')).split('Pengamat Politik Yusak Farchan dalam').join('')).substr(0,50) + '...' : (((item.title).split('Pengamat Politik Yusak Farchan - ').join('')).split('Pengamat Politik Yusak Farchan dalam').join('')); 
 
             list_data +=
@@ -219,7 +257,7 @@
             '</span></div><h4 class="yt-title">' +
             title +
             "</h4></div></div></div>"; //create an element and add it to the list
-            console.log(item.title);
+            // console.log(item.title);
         }
         ypt_thumbs.innerHTML = list_data; //After the for loop, insert that list of links into the html
         }
