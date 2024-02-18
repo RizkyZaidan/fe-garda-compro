@@ -7,7 +7,12 @@
        <meta content="Arsyi Co." name="author" />
 
        <!-- App favicon -->
-       <link rel="shortcut icon" href="{{ asset('assets/images/logo-bjbs.png') }}">
+       <link rel="shortcut icon" href="{{ asset('assets/img/favicon/favicon.ico') }}">
+       <link rel="icon" type="image/png" sizes="16x16" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/favicon-16x16.png') }}">
+       <link rel="icon" type="image/png" sizes="32x32" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/favicon-32x32.png') }}">
+       <link rel="icon" type="image/png" sizes="48x48" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/android-chrome-192x192.png') }}">
+       <link rel="icon" type="image/png" sizes="48x48" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/android-chrome-512x512.png') }}">
+       <link rel="apple-touch-icon" sizes="180x180" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/apple-touch-icon.png') }}">
 
        <!-- Bootstrap Css -->
        <link href="{{asset('assets/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
