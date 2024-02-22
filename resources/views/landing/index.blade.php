@@ -15,23 +15,23 @@
         <div class="carousel-item active">
           <img class="d-block clear-filter w-100" src="./assets/img/header_I.jpg" filter-color="header" alt="Independent Politic Consultant Solution">
           <div class="carousel-caption caption-carousel">
-              <h3>INDEPENDENT POLITIC CONSULTANT SOLUTION</h3>
+            <span style="display: block;font-size: 5.5vmin;">INDEPENDENT POLITIC CONSULTANT SOLUTION</span>
               <button class="btn btn-danger btn-outline-danger btn-round contact-us-btn" type="button" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">GET IN TOUCH WITH US</b></button>
           </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="./assets/img/header_II.png" alt="Leading Indonesia Vote, Polling and Social Media Branding">
           <div class="carousel-caption caption-carousel">
-            <h3>THE EXPERT STRATEGIC COMMUNICATION</h3>
-            <button class="btn btn-danger btn-outline-danger btn-round" id="about-us-btn" type="button" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">LEARN ABOUT US</b></button>
+            <span style="display: block;font-size: 5.5vmin;">THE EXPERT STRATEGIC COMMUNICATION</span>
+            <button class="btn btn-danger btn-outline-danger btn-round about-us-btn" type="button" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">LEARN ABOUT US</b></button>
           </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="./assets/img/header_III.png" alt="Supporting Leadership with Kingmaker">
           <div class="carousel-caption caption-carousel">
-            <h3>EMPOWER LEADERSHIP WITH KINGMAKER</h3>
+            <span style="display: block;font-size: 5.5vmin;">EMPOWER LEADERSHIP WITH KINGMAKER</span>
             <div class="d-flex justify-content-around">
-              <button class="btn btn-danger btn-outline-danger btn-round" type="button" id="service-plan-btn" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">See Our Plan</b></button>
+              <button class="btn btn-danger btn-outline-danger btn-round service-plan-btn" type="button" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">See Our Plan</b></button>
               <button class="btn btn-danger btn-outline-danger btn-round movement-btn" type="button" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">Our Action</b></button>
             </div>
           </div>
@@ -49,7 +49,7 @@
       <section id="about-us">
         <div class="container">
           <h3 class="title text-center pt-0 pb-4 underlined">TENTANG KAMI</h3>
-          <p class="sub-header-p">GARDA ORGANIZER merupakan sebuah Lembaga Riset & Konsultan Politik serta Perusahaan Creative, Event Organizer, Digital Marketing & Strategic Communication. GARDA akan menjadi solusi bagi anda yang membutuhkan konsultan politik independent, non partisan dan tidak berafiliasi dengan partai politik manapun.</p>
+          <p class="sub-header-p">GARDA ORGANIZER merupakan sebuah Lembaga Riset & Konsultan Politik serta Digital Marketing & Strategic Communication. GARDA akan menjadi solusi bagi anda yang membutuhkan konsultan politik independent, non partisan dan tidak berafiliasi dengan partai politik manapun.</p>
            <div class="row d-flex justify-content-around">
               {{-- <div class="col-sm-4 p-0 mx-3 card pb-5" data-wow-delay="0.0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;background: #161616;">
                 <div class="about-col">
@@ -322,9 +322,9 @@
       <section id="contact-us">
         <div class="container">
           <h3 class="title text-center pt-0 pb-4 underlined">KONTAK KAMI</h3>
-          <p class="sub-header-p">
-            Mari ciptakan momen paling berkesan dan lebih bernilai bersama Garda Organizer.
-          </p>
+          <div style="width: 30vmin; margin: 0 auto 3vmin auto;">
+            <img src="{{ asset('assets/img/LogoGardaOrganizer.svg') }}">
+          </div>
           <div class="card">
             <div class="card-body p-0 rounded" style="background: #161616">
               <div class="row p-0 m-0">

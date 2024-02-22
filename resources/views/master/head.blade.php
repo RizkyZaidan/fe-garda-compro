@@ -31,8 +31,11 @@
 
        <link rel="stylesheet" href="{{asset('assets/libs/twitter-bootstrap-wizard/prettify.css')}}"> --}}
 
-       <!-- Sweet Alert -->
-       {{-- <link rel="stylesheet" type="text/css" href="{{ URL::asset('/assets/libs/sweetalert2/sweetalert2.min.css') }}"> --}}
+
+        <!-- Sweet Alerts js -->
+        <script src="{{ URL::asset('/assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
+        <!-- Sweet alert init js -->
+        <script src="{{ URL::asset('/assets/js/pages/sweet-alerts.init.js') }}"></script>
 
        {{-- datepicker --}}
        {{-- <link href="{{ asset('assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css') }}" rel="stylesheet"

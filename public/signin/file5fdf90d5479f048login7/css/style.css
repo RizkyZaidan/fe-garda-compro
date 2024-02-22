@@ -1,0 +1,96 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.hq-template{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,.2);
+	background-position: center;
+}
+.pic-block img{
+	width: 100%;
+	height: 100%;
+}
+.pic-logo img{
+	width: 60%;
+	height: 60%;
+	float: center;
+}
+
+.login-block{
+	margin: auto;
+	padding: 5%;
+}
+.login-block h3 {
+	text-align: center;
+	font-weight: 600;
+	color: #a564fa;
+	text-transform: uppercase;
+}
+.login-block input{
+	box-shadow: none !important;
+	outline: none !important;
+	border-radius: 10px;
+	color: #111;
+	transition: 0.6s;
+	padding-left: 30px;
+}
+.login-block input:focus{
+	border-color: #796de7!important;
+}
+.login-block input::placeholder{
+	color: #111;
+}
+.login-block svg{
+    margin-bottom: -70px;
+    margin-left: 10px;
+}
+.login-block .forgot{
+	color: #111;
+	float: right;
+	font-weight: 600;
+}
+.login-block .login-btn{
+	margin-top: 70px;
+	text-align: center;
+}
+.login-block .login-btn a{
+	text-decoration: none;
+	padding: 10px 30px;
+	background: #8587fd;
+	border-radius: 10px;
+	color: #383838;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.login-block p{
+	color: #383838;
+	margin-top: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+.login-block p a {
+	color: #383838;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.copyright{
+  text-align: center; 
+    padding: 20px;
+    font-size: 16px;
+}
+.copyright a{
+  color: #c16df1 !important;
+  font-weight: bold;
+}
+
+
+/*************************** media queries *************/
+@media only screen and (max-width: 750px){
+	.pic-block{
+		margin: auto;
+		margin-top: 20px;
+	}
+}

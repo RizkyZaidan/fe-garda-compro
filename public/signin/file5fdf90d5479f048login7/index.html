@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SISUKA - Aplikasi Surat-Menyurat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('signin/css/bootstrap.min.css')}}" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" href="{{ asset('signin/css/font-awesome.min.css')}}" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+<body>
+	<div class="container hq-template" style="background-image: url('{{ asset('signin/images/login-bg.svg')}}');">
+		<form  method="post" action="/login">
+			@csrf
+		<div class="row">
+			<div class="pic-block col-lg-5 col-md-5 col-sm-9 col-10">
+				<img src="image/login7.svg">
+			</div>
+			<div class="login-block col-lg-6 col-md-7 col-sm-12 col-12">
+				<!-- <h3 class="mb-3">user login</h3> -->
+				<div class="pic-logo col-lg-5 col-md-5 col-sm-9 col-10">
+					<img src="image/logo.png">
+				</div>
+				<div class="form-group mb-3">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+					</svg>
+					<input type="text" name="" class="form-control form-control-lg" placeholder="Username">
+				</div>
+				<div class="form-group mb-3">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+					  <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+					  <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+					</svg>
+					<input type="password" name="" class="form-control form-control-lg" placeholder="Password">
+				</div>
+				<div class="login-btn">
+					<button class="login100-form-btn btn-block" type="submit">
+						Login
+					</button>
+					</div>
+
+			</div>
+		</div>
+
+		</form>
+
+	</div>
+<div class="copyright">
+
+		</div>
+		<script src="{{ asset('sweet/dist/sweetalert.js') }}"></script>
+<script src="{{ asset('sweet/dist/sweetalert.min.js') }}"></script>
+<script src="{{ asset('sweet/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript">
+	<?php if (Session::get('notexistuser')) : ?>
+		swal("", "Username/Password Tidak Sesuai", "error");
+	<?php endif; ?>
+
+	<?php if (Session::get('logout')) : ?>
+		swal("", "Berhasil Logout", "success");
+	<?php endif; ?>
+
+	<?php if (Session::get('y')) : ?>
+		swal("", "User Belum Memiliki Hak Akses", "error");
+	  <?php endif; ?>
+</script>
+</body>
+</html>

@@ -6,27 +6,29 @@
 
 	<header>
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent navbar-landing" color-on-scroll="400">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-landing" style="box-shadow:none;" color-on-scroll="400">
 			<div class="container">
 			<div class="navbar-translate">
-				<a class="navbar-brand" href="{{ route('index') }}" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+				<a class="navbar-brand" href="{{ route('index') }}" rel="tooltip" title="Designed by Garda Organizer. Coded by Arushi & Co." data-placement="bottom" target="_blank">
 					<img style="min-width: 15vw;" id="nav-logo" src="{{ asset('assets/img/LogoGardaHorizontal.svg') }}">
 				</a>
+				<div id="nav-pad" style="width:10vmin;"></div>
+				<span id="nav-brand-mobile">INDONESIA KINGMAKER</span>
 				<button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-bar top-bar"></span>
 				<span class="navbar-toggler-bar middle-bar"></span>
 				<span class="navbar-toggler-bar bottom-bar"></span>
 				</button>
 			</div>
-			<div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
+			<div class="collapse navbar-collapse justify-content-end" id="navigation">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" id="about-us-btn" target="_blank">
+						<a class="nav-link about-us-btn" target="_blank">
 						<p style="text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">TENTANG</p>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="service-plan-btn" target="_blank">
+						<a class="nav-link service-plan-btn" target="_blank">
 						<p style="text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">LAYANAN</p>
 						</a>
 					</li>

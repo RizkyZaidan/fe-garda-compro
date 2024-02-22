@@ -35,18 +35,18 @@
                 return (word.charAt(0).toUpperCase() + word.slice(1));
             }).join(' ');
         }
-        // $(document).scroll(function () {
-        //     var $nav = $(".navbar-landing");
-        //     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        // });
+        $(document).scroll(function () {
+            var $nav = $(".navbar-landing");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
 
         // Navigation Button
-        $("#about-us-btn").click(function() {
+        $(".about-us-btn").click(function() {
             $('html,body').animate({
                 scrollTop: $("#about-us").offset().top},
                 'slow');
         });
-        $("#service-plan-btn").click(function() {
+        $(".service-plan-btn").click(function() {
             $('html,body').animate({
                 scrollTop: $(".slider-layanan").offset().top},
                 'slow');
