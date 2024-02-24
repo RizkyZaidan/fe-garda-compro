@@ -1,10 +1,11 @@
    <head>
 
        <meta charset="utf-8" />
-       <title>Indonesian Kingmaker</title>
+       <title>Indonesian Kingmaker | Konsultan Politik Terbaik Indonesia</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <meta content="Garda Organizer" name="description" />
-       <meta content="Arsyi Co." name="author" />
+       <meta content="Menangkan pemilu anda selanjutnya. Gratis konsultasi strategi kampanye pemilu, survey elektabilitas, dan metode pemenangan lainnya bersama Indonesia Kingmaker." name="description" />
+       <meta content="Indonesia Kingmaker" name="author" />
+       <meta name=" robots" content=" index, follow">
 
        <!-- App favicon -->
        <link rel="shortcut icon" href="{{ asset('assets/img/favicon/favicon.ico') }}">
@@ -20,6 +21,9 @@
         <link href="{{asset('assets/css_admin/icons.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- App Css-->
         <link href="{{asset('assets/css_admin/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
+        <!-- DataTables -->
+        <link href="{{asset('assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')}}" rel="stylesheet"
+        type="text/css" />
 
        <!-- Responsive datatable examples -->
        {{-- <link href="{{asset('assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')}}"

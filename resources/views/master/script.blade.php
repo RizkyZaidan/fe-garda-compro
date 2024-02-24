@@ -8,6 +8,13 @@
     <!-- Sweet Alerts js -->
     <script src="{{ URL::asset('/assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
 
+    
+    <!-- Datatable init js -->
+    <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/pages/dashboard.init.js') }}"></script> --}}
+    <script src="{{ asset('assets/libs/bs-custom-file-input/bs-custom-file-input.min.js') }}"></script>
+
+
     {{-- Now UI JS --}}
     <script src="{{ asset('assets/js/now-ui-kit.js?v=1.3.0') }}"></script>
     <script src="{{ asset('assets/js/plugins/bootstrap-datepicker.js') }}"></script>

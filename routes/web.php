@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [DashboardController::class, 'index'])->name('index');
-Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/login', [AuthController::class, 'index'])->name('index');
+Route::post('/sign-in', [AuthController::class, 'login'])->name('sign-in');
+
+Route::group(['middleware' => 'authadmin'], function () {
+    Route::get('/edit', [DashboardController::class, 'edit'])->name('edit');
+});

@@ -1,157 +1,172 @@
-html, body {
+html,
+body {
   height: 100%;
 }
-body{
-font-family: 'Open Sans', sans-serif;
+
+body {
+  font-family: 'Open Sans', sans-serif;
   height: 100%;
   width: 100%;
 }
-.hq-template{
+
+.hq-template {
   margin-top: 10%;
-margin-bottom: 30px;
-background-repeat: no-repeat;
-background-size: cover;
-/* box-shadow: 0px 0px 20px 0px rgba(0,0,0,.2); */
-background-position: left;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* box-shadow: 0px 0px 20px 0px rgba(0,0,0,.2); */
+  background-position: left;
   touch-action: manipulation;
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   text-size-adjust: none;
 }
-.pic-block img{
-width: 100%;
-height: 100%;
-}
-.pic-logo img{
-width: 90%;
-height: 90%;
-float: center;
+
+.pic-block img {
+  width: 100%;
+  height: 100%;
 }
 
-.login-block{
-margin: auto;
-padding: 5%;
+.pic-logo img {
+  width: 90%;
+  height: 90%;
+  float: center;
 }
+
+.login-block {
+  margin: auto;
+  padding: 5%;
+}
+
 .login-block h3 {
-text-align: center;
-font-weight: 600;
-color: #a564fa;
-text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  color: #a564fa;
+  text-transform: uppercase;
 }
-.login-block input{
-box-shadow: none !important;
-outline: none !important;
-border-radius: 10px;
-color: #111;
-transition: 0.6s;
-padding-left: 30px;
-}
-.login-block input:focus{
-border-color: #796de7!important;
-}
-.login-block input::placeholder{
-color: #111;
-}
-.login-block svg{
 
+.login-block input {
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 10px;
+  color: #111;
+  transition: 0.6s;
+  padding-left: 30px;
 }
-.login-block .forgot{
-color: #111;
-float: right;
-font-weight: 600;
+
+.login-block input:focus {
+  border-color: #796de7 !important;
 }
-.login-block .login-btn{
-margin-top: 70px;
-text-align: center;
+
+.login-block input::placeholder {
+  color: #111;
 }
-.login-block .login-btn a{
-text-decoration: none;
-padding: 10px 30px;
-background: #8587fd;
-border-radius: 10px;
-color: #383838;
-font-weight: 600;
-text-transform: uppercase;
+
+.login-block svg {}
+
+.login-block .forgot {
+  color: #111;
+  float: right;
+  font-weight: 600;
 }
-.login-block p{
-color: #383838;
-margin-top: 20px;
-font-weight: 600;
-text-align: center;
+
+.login-block .login-btn {
+  margin-top: 70px;
+  text-align: center;
 }
+
+.login-block .login-btn a {
+  text-decoration: none;
+  padding: 10px 30px;
+  background: #8587fd;
+  border-radius: 10px;
+  color: #383838;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.login-block p {
+  color: #383838;
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
 .login-block p a {
-color: #383838;
-text-transform: uppercase;
-font-weight: 600;
+  color: #383838;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-.copyright{
-text-align: center;
+
+.copyright {
+  text-align: center;
   padding: 20px;
   font-size: 16px;
 }
-.copyright a{
-color: #c16df1 !important;
-font-weight: bold;
+
+.copyright a {
+  color: #c16df1 !important;
+  font-weight: bold;
 }
 
-[ Button ]*/
-.container-login100-form-btn {
-width: 100%;
-display: -webkit-box;
-display: -webkit-flex;
-display: -moz-box;
-display: -ms-flexbox;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+[ Button]*/ .container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .login100-form-btn {
-display: -webkit-box;
-display: -webkit-flex;
-display: -moz-box;
-display: -ms-flexbox;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 20px;
-min-width: 160px;
-height: 50px;
-background-color: #165680;
-border-radius: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ff000053;
 
-font-family: SourceSansPro-SemiBold;
-font-size: 14px;
-color: #fff;
-line-height: 1.2;
-text-transform: uppercase;
+  font-family: SourceSansPro-SemiBold;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
 
--webkit-transition: all 0.4s;
--o-transition: all 0.4s;
--moz-transition: all 0.4s;
-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
 
-box-shadow: 0 10px 30px 0px rgba(55, 49, 231, 0.5);
--moz-box-shadow: 0 10px 30px 0px rgba(57, 97, 208, 0.5);
--webkit-box-shadow: 0 10px 30px 0px rgba(48, 69, 185, 0.5);
--o-box-shadow: 0 10px 30px 0px rgba(38, 24, 150, 0.5);
--ms-box-shadow: 0 10px 30px 0px rgba(25, 44, 165, 0.5);
+  box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
+  border-width: 4px;
 }
 
 .login100-form-btn:hover {
-background-color: #154362;
-box-shadow: 0 10px 30px 0px rgba(28, 31, 172, 0.8);
--moz-box-shadow: 0 10px 30px 0px rgba(34, 66, 170, 0.8);
--webkit-box-shadow: 0 10px 30px 0px rgba(24, 42, 161, 0.8);
--o-box-shadow: 0 10px 30px 0px rgba(23, 21, 154, 0.8);
--ms-box-shadow: 0 10px 30px 0px rgba(31, 25, 156, 0.8);
+  background-color: #cd000080;
+  box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(107, 107, 107, 0.5);
 }
 
 /*************************** media queries *************/
-@media only screen and (max-width: 750px){
-.pic-block{
-  margin: auto;
-  margin-top: 20px;
-}
+@media only screen and (max-width: 750px) {
+  .pic-block {
+    margin: auto;
+    margin-top: 20px;
+  }
 }

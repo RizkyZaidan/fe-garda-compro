@@ -6390,7 +6390,7 @@ img {
   ;
 }
 
-.carousel-caption>span {
+.carousel-caption>h1 {
   text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.8) !important;
 }
 
@@ -8527,7 +8527,7 @@ img {
     font-size: 0.8em;
   }
 
-  .carousel-caption>span {
+  .carousel-caption>h1 {
     margin-bottom: 10px;
   }
 }

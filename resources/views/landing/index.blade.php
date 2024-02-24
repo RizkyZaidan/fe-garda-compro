@@ -15,21 +15,21 @@
         <div class="carousel-item active">
           <img class="d-block clear-filter w-100" src="./assets/img/header_I.jpg" filter-color="header" alt="Independent Politic Consultant Solution">
           <div class="carousel-caption caption-carousel">
-            <span style="display: block;font-size: 5.5vmin;">INDEPENDENT POLITIC CONSULTANT SOLUTION</span>
+            <h1 style="display: block;font-size: 5.5vmin;">INDEPENDENT POLITIC CONSULTANT SOLUTION</h1>
               <button class="btn btn-danger btn-outline-danger btn-round contact-us-btn" type="button" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">GET IN TOUCH WITH US</b></button>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/img/header_II.png" alt="Leading Indonesia Vote, Polling and Social Media Branding">
+          <img class="d-block w-100" src="./assets/img/header_II.png" alt="Leading Indonesia Survey, Polling and Social Media Branding">
           <div class="carousel-caption caption-carousel">
-            <span style="display: block;font-size: 5.5vmin;">THE EXPERT STRATEGIC COMMUNICATION</span>
+            <h1 style="display: block;font-size: 5.5vmin;">THE EXPERT STRATEGIC COMMUNICATION</h1>
             <button class="btn btn-danger btn-outline-danger btn-round about-us-btn" type="button" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">LEARN ABOUT US</b></button>
           </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="./assets/img/header_III.png" alt="Supporting Leadership with Kingmaker">
           <div class="carousel-caption caption-carousel">
-            <span style="display: block;font-size: 5.5vmin;">EMPOWER LEADERSHIP WITH KINGMAKER</span>
+            <h1 style="display: block;font-size: 5.5vmin;">EMPOWER LEADERSHIP WITH KINGMAKER</h1>
             <div class="d-flex justify-content-around">
               <button class="btn btn-danger btn-outline-danger btn-round service-plan-btn" type="button" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">See Our Plan</b></button>
               <button class="btn btn-danger btn-outline-danger btn-round movement-btn" type="button" style="border-width: 4px;"><b style="color: white;text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);">Our Action</b></button>
@@ -67,7 +67,7 @@
               <div class="col-sm-4 p-0 mx-3 card pb-5" data-wow-delay="0.0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;background: #161616;">
                 <div class="about-col">
                   <div class="img">
-                    <img src="./assets/img/Vision.png" loading="lazy" alt="filosofi politik independen" style="width:100%" class="img-fluid">
+                    <img src="./assets/img/Vision.png" loading="lazy" alt="Visi politik yang independen" style="width:100%" class="img-fluid">
                   </div>
                   <h4 class="title px-3 mt-0 mb-3" style="text-align:center;">VISI</h4>
                   <p class="px-3" style="text-align:justify;font-size:1em;font-weight:normal;">
@@ -77,7 +77,7 @@
               <div class="col-sm-4 p-0 mx-3 card pb-5" data-wow-delay="0.0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;background: #161616;">
                 <div class="about-col">
                   <div class="img">
-                    <img src="./assets/img/Mission.png" loading="lazy" alt="filosofi politik independen" style="width:100%" class="img-fluid">
+                    <img src="./assets/img/Mission.png" loading="lazy" alt="Misi politik yang independen" style="width:100%" class="img-fluid">
                   </div>
                   <h4 class="title px-3 mt-0 mb-3" style="text-align:center;">MISI</h4>
                   <p class="px-3" style="text-align:justify;font-size:1em;font-weight:normal;">
@@ -100,7 +100,7 @@
                     <article class=" padding_2x">
                         <h3 class="big title"><em>Paket Riset</em> & Survey</h3>
                         <p>
-                          Tingkat popularitas kandidat bisa diukur dengan metode ilmiah yang akurat, yakni SURVEY <em><strong>POPULARITAS</strong></em> & <em><strong>ELEKTABILITAS</strong></em> KANDIDAT. Hasil survey akan memberikan gambaran bagaimana tingkat popularitas, kekuatan, dan posisi kandidat di mata publik.
+                          Tingkat popularitas kandidat bisa diukur dengan metode ilmiah yang akurat, yakni SURVEY <em><strong>POPULARITAS</strong></em> & <em><strong>ELEKTABILITAS</strong></em> KANDIDAT. Hasil metode ini akan memberikan gambaran dari sisi survey elektabilitas dan bagaimana tingkat popularitas, kekuatan, dan posisi kandidat di mata publik.
                           Jenis layanan survey yang diberikan Garda Organizer :
                         </p>
                         <ul>
@@ -131,9 +131,9 @@
                     <article class=" padding_2x">
                         <h3 class="big title"><em>Media</em> Campaign</h3>
                         <p>
-                          Kami memberikan jasa konsultasi, perencanaan strategis dan perumusan Media Campaign, Media Relations & Media Monitoring, untuk membantu kandidat dalam memenangkan <em><b>Pilkada</b></em>.
+                          Kami memberikan jasa konsultasi, perencanaan strategis dan perumusan Media Campaign, Media Relations & Media Monitoring, untuk membantu kandidat dalam memenangkan <em><b>Pemilihan kepala daerah</b></em>.
                           <br>
-                          Kami selalu inovatif dalam memproduksi dan mengimplementasikan style kampanye publik yang efektif agar pesan komunikasi <em><b>Politik</b></em> dapat tepat sasaran.
+                          Kami selalu inovatif dalam memproduksi dan mengimplementasikan style kampanye publik yang efektif sehingga pesan komunikasi <em><b>Politik</b></em> dapat tepat sasaran baik dengan jenis kampanye langsung maupun kampanye politik digital (kampanye online).
                           <br><br>
                           Paket ini terdiri dari:
                         </p>
@@ -182,9 +182,9 @@
                     <article class=" padding_2x">
                         <h3 class="big title">Pelaporan <em><b>Dana Kampanye</b></em></h3>
                         <p>
-                          Kami membantu memberikan jasa layanan <em><b>Pelaporan Dana Kampanye</b></em> Pilkada.
+                          Kami membantu memberikan jasa layanan <em><b>Pelaporan Dana dari biaya kampanye</b></em> Pilkada.
                           <br><br>
-                          Paket Pelaporan Dana Kampanye mencakup; penyusunan, pengelolaan, dan pertanggungjawaban laporan dana kampanye kepada <em><b>KPU Kab/Kota./KPU Provinsi</b></em>.
+                          Paket Pelaporan Dana Kampanye mencakup; penyusunan, pengelolaan, dan pertanggungjawaban laporan dana dan biaya kampanye kepada <em><b>KPU Kab/Kota./KPU Provinsi</b></em>.
                           <br><br>
                           Pelaporan dana kampanye merupakan wujud <em><b>Transparansi dan Akuntabilitas</b></em> terhadap penggunaan dana kampanye pasangan calon, baik yang berasal dari partai atau gabungan partai, dan juga sumbangan dari pihak lain. 
                         </p>
@@ -194,7 +194,7 @@
                     <article class=" padding_2x">
                         <h3 class="big title"><em><b>Bantuan Hukum</b></em> & Advokasi</h3>
                         <p>
-                          Paket Bantuan Hukum dan Advokasi merupakan layanan jasa pemberian bantuan hukum dan advokasi terkait <em><b>sengketa pilkada yang potensial</b></em> terjadi menyangkut selisih hasil penghitungan suara.
+                          Paket Bantuan Hukum dan Advokasi merupakan layanan jasa pemberian bantuan hukum dan advokasi terkait <em><b>sengketa pemilihan kepala daerah yang potensial</b></em> terjadi menyangkut selisih hasil penghitungan suara.
                           <br><br>
                           Program ini mencakup; identifikasi masalah; collecting barang bukti; pengurusan sengketa ke MK dan lembaga terkait dengan target <em><b>memenangkan calon</b></em> dalam peradilan di MK.
                         </p>	
@@ -271,12 +271,12 @@
         <div class="container">
           <h3 class="title text-center pt-0 pb-4 underlined">TIM KAMI</h3>
           <p class="sub-header-p">
-            Kami percaya pengalaman adalah guru terbaik. Dan tim yang kami bentuk dari para ahli pada bidangnya masing-masing. Kami tidak sekedar memprediksi, tapi kami melaksanakan dan membuktikan konsep dan strategi yang kami terapkan.
+            Kami percaya pengalaman adalah guru terbaik. Dan tim yang kami bentuk dari para ahli pada bidangnya masing-masing. Kami tidak sekedar memprediksi, tapi kami melaksanakan dan membuktikan konsep dan strategi yang kami terapkan dalam bidang konsultan politik.
           </p>
         </div>
         <div id="image-track" data-mouse-down-at="0" data-prev-percentage="-50" style="margin-top:-10vh;">
           <div class="frame">
-            <img class="image" src="./assets/img/Daniel-Wijaya.png" draggable="false" />
+            <img class="image" src="./assets/img/Daniel-Wijaya.png" draggable="false" alt="Daniel Wijaya"/>
             <div class="textbox">
               <span class="subheader"><b style="font-size: 1.2em">Daniel Wijaya</b>
                 <br>
@@ -286,7 +286,7 @@
             </div>
           </div>
           <div class="frame">
-            <img class="image" src="./assets/img/Yusak-Farchan.png" draggable="false" />
+            <img class="image" src="./assets/img/Yusak-Farchan.png" draggable="false" alt="Yusak Farchan"/>
             <div class="textbox">
               <span class="subheader"><b style="font-size: 1.2em">Yusak Farchan, S.Sos., M.Si.</b>
                 <br>
@@ -302,7 +302,7 @@
             </div>
           </div>
           <div class="frame">
-            <img class="image" src="./assets/img/Eva.png" draggable="false" />
+            <img class="image" src="./assets/img/Eva.png" draggable="false" alt="Eva Muryadi"/>
             <div class="textbox">
               <span class="subheader"><b style="font-size: 1.2em">Evafani Muryadi</b>
                 <br>
@@ -323,7 +323,7 @@
         <div class="container">
           <h3 class="title text-center pt-0 pb-4 underlined">KONTAK KAMI</h3>
           <div style="width: 30vmin; margin: 0 auto 3vmin auto;">
-            <img src="{{ asset('assets/img/LogoGardaOrganizer.svg') }}">
+            <img src="{{ asset('assets/img/LogoGardaOrganizer.svg') }}" alt="Garda Organizer">
           </div>
           <div class="card">
             <div class="card-body p-0 rounded" style="background: #161616">

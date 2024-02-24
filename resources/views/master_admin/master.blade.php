@@ -14,19 +14,19 @@
 					<div class="navbar-brand-box">
 						<a href="{{ route('dashboard.index') }}" class="logo logo-dark">
 							<span class="logo-sm">
-								<img src="{{ asset('assets/images/logo.svg') }}" alt="" height="22">
+								<img src="{{ asset('assets/img/LogoGardaHorizontal.svg') }}" alt="" height="22">
 							</span>
 							<span class="logo-lg">
-								<img src="{{ asset('assets/images/logo-dark.png') }}" alt="" height="17">
+								<img src="{{ asset('assets/img/LogoGardaHorizontal.svg') }}" alt="" height="17">
 							</span>
 						</a>
 
 						<a href="{{ route('dashboard.index') }}" class="logo logo-light">
 							<span class="logo-sm">
-								<img src="{{ asset('assets/images/logo-bjbs-putih.png') }}" alt="" height="25">
+								<img src="{{ asset('assets/img/LogoGardaHorizontal.svg') }}" alt="" height="25">
 							</span>
 							<span class="logo-lg">
-								<img src="{{ asset('assets/images/logo-bjbs-putih.png') }}" alt="" height="70">
+								<img src="{{ asset('assets/img/LogoGardaHorizontal.svg') }}" alt="" height="70">
 							</span>
 						</a>
 					</div>

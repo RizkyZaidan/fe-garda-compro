@@ -2,11 +2,17 @@
 <html>
 
 <head>
-    <title>GARDA ORGANIZER ADMINISTRATOR V.1.0.0</title>
+    <title>ADMINISTRATOR GARDA V.1.0.0</title>
     {{-- <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
 
     {{-- /* Disable zooming on mobile devices */ --}}
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon/favicon.ico') }}">
+       <link rel="icon" type="image/png" sizes="16x16" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/favicon-16x16.png') }}">
+       <link rel="icon" type="image/png" sizes="32x32" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/favicon-32x32.png') }}">
+       <link rel="icon" type="image/png" sizes="48x48" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/android-chrome-192x192.png') }}">
+       <link rel="icon" type="image/png" sizes="48x48" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/android-chrome-512x512.png') }}">
+       <link rel="apple-touch-icon" sizes="180x180" rel="noopener" target="_blank" href="{{ asset('assets/img/favicon/apple-touch-icon.png') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('signin/css/bootstrap.min.css')}}">
     {{--integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"--}}    
@@ -25,10 +31,12 @@
         }
         /* Set the background image */
         body {
-        background-image: url('{{ asset('signin/image/bg_sisuka_login.png')}}');
+        background-image: url('{{ asset('assets/img/background-login.png')}}');
         background-size: cover;
         background-position: :left;
         background-repeat: no-repeat;
+        color:white;
+        height:100%;
         }
 
 
@@ -43,6 +51,9 @@
         font-family: 'Poppins', sans-serif;
         src: url('/fonts/Poppins-Regular.ttf');
         }
+    .shadow-text{
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);
+    }
 
         /* Center the login form */
         .login-form {
@@ -71,17 +82,17 @@
     <br>
     <br>
     <div class="container hq-template" style="float: left;">
-        <form method="post" action="{{ route('login') }}">
+        <form method="post" action="{{ route('sign-in') }}">
             @csrf
             <div class="row" style="display: list-item;">
                 <div class="login-block col-lg-6 col-md-7 col-sm-12 col-12" style="text-align: -webkit-center;margin-left: 15%;-webkit-text-stroke: thin;">
                     <!-- <h3 class="mb-3">user login</h3> -->
                     <div class="pic-logo col-lg-5 col-md-5 col-sm-9 col-10">
-                        <img src="{{ asset('signin/image/logo.png') }}">
+                        <img src="{{ asset('assets/img/LogoGardaOrganizer.svg') }}">
                     </div>
                     <br>
-                    <h5 class="poppins">Sistem Informasi Surat Masuk dan Keluar</h5>
-                    <h6 class="poppins">v.3.0.25</h6>
+                    <h5 class="poppins shadow-text">Admin Dashboard Garda Organizer</h5>
+                    <h6 class="poppins shadow-text">v.1.1</h6>
                     <br>
                     <div class="form-group mb-3">
                         <div class="input-group mb-3">
@@ -110,8 +121,10 @@
                         </div>
                     </div>
                     <div class="login-btn">
-                        <button class="login100-form-btn btn-block" type="submit">
-                            Login
+                        <button class="login100-form-btn btn-block poppins btn btn-danger btn-outline-danger btn-round" type="submit">
+                            <h5 class="m-5">
+                                MASUK
+                            </h5>
                         </button>
                     </div>
 
