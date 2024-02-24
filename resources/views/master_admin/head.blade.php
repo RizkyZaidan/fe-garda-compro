@@ -1,11 +1,10 @@
    <head>
 
        <meta charset="utf-8" />
-       <title>Indonesian Kingmaker | Konsultan Politik Terbaik Indonesia</title>
+       <title>Indonesian Kingmaker</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <meta content="Menangkan pemilu anda selanjutnya. Gratis konsultasi strategi kampanye pemilu, survey elektabilitas, dan metode pemenangan lainnya bersama Indonesia Kingmaker." name="description" />
-       <meta content="Indonesia Kingmaker" name="author" />
-       <meta name=" robots" content=" index, follow">
+       <meta content="Garda Organizer" name="description" />
+       <meta content="Arsyi Co." name="author" />
 
        <!-- App favicon -->
        <link rel="shortcut icon" href="{{ asset('assets/img/favicon/favicon.ico') }}">
