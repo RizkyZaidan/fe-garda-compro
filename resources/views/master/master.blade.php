@@ -10,7 +10,8 @@
 			<div class="container">
 			<div class="navbar-translate">
 				<a class="navbar-brand" href="{{ route('index') }}" rel="tooltip" title="Designed by Garda Organizer. Coded by Arushi & Co." data-placement="bottom" target="_blank">
-					<img style="min-width: 15vw;" id="nav-logo" src="{{ asset('assets/img/LogoGardaHorizontal.svg') }}">
+					<img id="nav-logo" style="width: 5vmin" src="{{ asset('assets/img/LogoIKM.svg') }}">
+					<span style="font-size:2vmin; text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);vertical-align: middle;margin-left: 2vmin;">INDONESIA KINGMAKER</span>
 				</a>
 				<div id="nav-pad" style="width:10vmin;"></div>
 				<span id="nav-brand-mobile">INDONESIA KINGMAKER</span>

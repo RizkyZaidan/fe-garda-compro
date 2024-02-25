@@ -49,7 +49,7 @@
       <section id="about-us">
         <div class="container">
           <h3 class="title text-center pt-0 pb-4 underlined">TENTANG KAMI</h3>
-          <p class="sub-header-p">GARDA ORGANIZER merupakan sebuah Lembaga Riset & Konsultan Politik serta Digital Marketing & Strategic Communication. GARDA akan menjadi solusi bagi anda yang membutuhkan konsultan politik independent, non partisan dan tidak berafiliasi dengan partai politik manapun.</p>
+          <p class="sub-header-p">Indonesia Kingmaker merupakan sebuah Lembaga Riset & Konsultan Politik serta Digital Marketing & Strategic Communication. Indonesia Kingmaker akan menjadi solusi bagi anda yang membutuhkan konsultan politik independent, non partisan dan tidak berafiliasi dengan partai politik manapun.</p>
            <div class="row d-flex justify-content-around">
               {{-- <div class="col-sm-4 p-0 mx-3 card pb-5" data-wow-delay="0.0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;background: #161616;">
                 <div class="about-col">
@@ -101,7 +101,7 @@
                         <h3 class="big title"><em>Paket Riset</em> & Survey</h3>
                         <p>
                           Tingkat popularitas kandidat bisa diukur dengan metode ilmiah yang akurat, yakni SURVEY <em><strong>POPULARITAS</strong></em> & <em><strong>ELEKTABILITAS</strong></em> KANDIDAT. Hasil metode ini akan memberikan gambaran dari sisi survey elektabilitas dan bagaimana tingkat popularitas, kekuatan, dan posisi kandidat di mata publik.
-                          Jenis layanan survey yang diberikan Garda Organizer :
+                          Jenis layanan survey yang diberikan Indonesia Kingmaker :
                         </p>
                         <ul>
                           <li><em><b>Individual Survey</b></em> Dilakukan sebanyak 1 kali sepanjang periode
@@ -240,7 +240,7 @@
         <div class="container">
           <h3 class="title text-center pt-0 pb-4 underlined">PORTOFOLIO KAMI</h3>
           <p class="sub-header-p">
-            Independensi GARDA ORGANIZER selalu dijaga dengan kualitas riset yang teruji berdasarkan kaidah-kaidah akademik, etika kerja profesional, serta  bersandar pada kode etik survei opini publik, yakni International Association of Public Opinion Research (IAPOR).
+            Independensi Indonesia Kingmaker selalu dijaga dengan kualitas riset yang teruji berdasarkan kaidah-kaidah akademik, etika kerja profesional, serta  bersandar pada kode etik survei opini publik, yakni International Association of Public Opinion Research (IAPOR).
           </p>
         </div>
         <section class='youtube-gallery py-5 bg-black position-relative bg-img bg-lines' id='watch'>
@@ -323,7 +323,7 @@
         <div class="container">
           <h3 class="title text-center pt-0 pb-4 underlined">KONTAK KAMI</h3>
           <div style="width: 30vmin; margin: 0 auto 3vmin auto;">
-            <img src="{{ asset('assets/img/LogoGardaOrganizer.svg') }}" alt="Garda Organizer">
+            <img src="{{ asset('assets/img/LogoIKM.svg') }}" alt="Indonesia Kingmaker">
           </div>
           <div class="card">
             <div class="card-body p-0 rounded" style="background: #161616">

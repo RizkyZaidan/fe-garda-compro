@@ -32,7 +32,7 @@ html {
 }
 
 .scrolled {
-  background-color: rgba(219, 219, 219, 0.3) !important;
+  background-color: rgba(0, 0, 0, 0.496) !important;
   transition: background-color 200ms linear;
 }
 
@@ -1653,6 +1653,7 @@ h6 {
     background-position: top left;
   }
 }
+
 @media screen and (max-width: 920px) {
 
   #nav-brand-mobile,
